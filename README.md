@@ -48,7 +48,7 @@ pip install tzxtools pyserial
 If you are on Windows and prefer to run an executable binary instead, there is one available in bin folder.
 
 
-References
+REFERENCES
 
 Spectrum Microdrive book
     https://ia801504.us.archive.org/23/items/spectrum_microdrive_book/spectrum_microdrive_book.pdf
