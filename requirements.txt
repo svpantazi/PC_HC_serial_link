@@ -1,0 +1,7 @@
+cffi>=1.13.2
+numpy>=1.16.4
+pycparser>=2.19
+pypng>=0.0.21
+pyserial>=3.5
+sounddevice>=0.4.6
+tzxtools>=1.9.1
