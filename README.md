@@ -24,17 +24,15 @@ July 2023
 BACKGROUND
 
 This software application allows transfer of data and programs from a PC to a HC (ZX-spectrum compatible) computer equipped with a IF1 interface.
-The serial communication software and hardware on the IF1 is well described in the Spectrum Microdrive book. There is variation on the actual connection of PC serial port signals
-so some experiments have been necessary in order to determine the exact configuration. Having the PC serial port in the RTS/CTS flow control configuration seems to work well.
+The serial communication software and hardware on the IF1 is well described in the Spectrum Microdrive book. There is variation on the actual connection of PC serial port signals so some experiments have been necessary in order to determine the exact configuration. Having the PC serial port in the RTS/CTS flow control configuration seems to work well.
 
-See the PDF file in the doc folder for documentation on how to construct a serial cable.
+For documentation on how to construct a serial cable, read the PDF file in the doc folder.
  
-Currently, the application allows to transfer binary data at the maximum rate of 19200 baud. Screen data transfers poses no praticular problems since screens are simple data blocks
-with a fixed size of 6912 bytes and a precise memory location where they need to be transfered (0x4000).
+Currently, the application allows transferring binary data at the maximum rate of 19200 baud. Screen data transfers pose no praticular problems since screens are simple data blocks with a fixed size of 6912 bytes and a precise memory location where they need to be transferred (0x4000).
 
-Code blocks and Basic program data on the other hand, have variable lengths and additional metadata stored in 9 byte (microdive header) or 17 bytes (tape headeer).
+Code blocks and Basic program data on the other hand, have variable lengths and require additional metadata that is typically stored in 9 byte (microdive header) or 17 bytes (tape header).
 
-The application is limited to the transfer of simple binary files (with or without an additional header file) or to at most a header and a data block from a selected TXZ file. Note that the TZX data blocks should be standard speed (type 16) headers or data blocks.
+The application is limited to the transfer of simple binary files (with or without an additional header file) or to those with at most a header and a data block that can be read from a TXZ file. Note that the TZX data blocks should be standard speed (type 16) headers or data blocks.
 
 The application has a GUI allows selecting a file to transfer, setting the transfer parameters (length, destination address, auto start line, etc.) as well as the serial communication (port and baud rate). Selected screen files are also displayed in the application.
 
@@ -42,7 +40,7 @@ INSTALLATION
 
 Clone the project folder on your machine. It contains the source code, a binary executable, documentation (this readme and and aditional PDF file) and an asset folder with examples of binary file programs, screens and tzx files that are known to work.
 
-To run the application you need to have Python 3 installed on your machine and launch PC_HC_serial.py in the src folder. If you get errors about missing modules, there are only two dependencies to install: tzxtools and pyserial. You can install both of them using pip: 
+To run the application you need to have Python 3 installed on your machine and to launch PC_HC_serial.py in the src folder. If you get errors about missing modules, there are only two dependencies to install: tzxtools and pyserial. You can install both of them using pip: 
 
 pip install tzxtools pyserial
 
