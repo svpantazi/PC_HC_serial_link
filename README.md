@@ -42,12 +42,11 @@ INSTALLATION
 
 Clone the project folder on your machine. It contains the source code, a binary executable, documentation (this readme and and aditional PDF file) and an asset folder with examples of binary file programs, screens and tzx files that are known to work.
 
-To run the source code you need to have Python 3 installed on your machine. If you get errors about missing modules, there are only two dependencies to install namely tzxtools and pyserial. You can install both using pip: 
+To run the application you need to have Python 3 installed on your machine and launch PC_HC_serial.py in the src folder. If you get errors about missing modules, there are only two dependencies to install: tzxtools and pyserial. You can install both of them using pip: 
 
 pip install tzxtools pyserial
 
 If you are on Windows and prefer to run an executable binary instead, there is one available in bin folder.
-
 
 REFERENCES
 
