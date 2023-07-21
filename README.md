@@ -1,9 +1,4 @@
-# PC_HC_serial_link
-PC to HC serial data link
-
-Stefan V. Pantazi (svpantazi@gmail.com)
-
-July 2023
+# PC to HC serial data link
 
 BACKGROUND
 
