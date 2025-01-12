@@ -102,7 +102,7 @@ def start_serial_xfer(on_transfer_started=None):
         ser_port.reset_output_buffer()
         #if ser_port.in_waiting>0:
         ser_port.reset_input_buffer()
-        #ser_port.set_output_flow_control(enable=True)
+        ser_port.set_output_flow_control(enable=True)
         ser_port.dtr=False
         ser_port.rts=False
         print(f'DTR {ser_port.dtr} RTS {ser_port.cts}')       
